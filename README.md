@@ -51,6 +51,8 @@ The goal of this project is to showcase practical skills in SIEM deployment, log
 ```bash
 git clone https://github.com/wazuh/wazuh-docker.git
 ```
+![CMD](screenshots/git-clone.png)
+
 
 Navigate to the single-node deployment directory:
 ```bash
@@ -65,6 +67,7 @@ Wazuh uses certificates to secure communication between components. For this lab
 ```bash
 docker compose -f generate-indexer-certs.yml run --rm generator
 ```
+![CMD](screenshots/wazuh-certificate-cmd.png)
 
 ---
 
@@ -72,6 +75,8 @@ docker compose -f generate-indexer-certs.yml run --rm generator
 ```bash
 docker compose up -d
 ```
+![CMD](screenshots/docker-compose.png)
+
 
 This launches the Wazuh server, indexer, and dashboard containers.
 
@@ -82,12 +87,18 @@ Open a browser and navigate to:
 ```
 https://localhost
 ```
+![Web-browser](screenshots/Connection.png)
+
 
 A browser security warning is expected due to self-signed certificates.
 - Click **Advanced**
 - Select **Proceed to localhost (unsafe)**
 
+![Web-browser](screenshots/wazuh-login-page.png)
+
 Log in using the default credentials provided in the Wazuh documentation.
+
+![Web-browser](screenshots/wazuh-dashboard.png)
 
 ---
 
