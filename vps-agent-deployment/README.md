@@ -142,3 +142,23 @@ After deployment, the following checks were performed to verify successful opera
 - The agent appeared as **Active (green)** in the Wazuh Dashboard
 - System information, security events, and configuration assessments were visible
 - This confirmed end-to-end communication between agent and manager
+## Screenshots
+
+
+### Contabo VPS Login
+![Contabo VPS Login](screenshots/Contabo-VPS-login.png)
+
+### Wazuh Installation on VPS
+![Wazuh Installation](screenshots/contabo-wazuh--installation.png)
+
+### Wazuh Dashboard Access
+![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
+
+### Windows Agent Details in Wazuh
+![Agent Info](screenshots/wazuh-agent-info.png)
+
+### Windows Agent Enrollment Success
+![Agent Enrollment Success](screenshots/Agent-enroll-Success.png)
+
+### Windows Agent Update Disbale [IMPORTANT]
+![Windows Agent Running](screenshots/Wazuh-disable-updates.png)
